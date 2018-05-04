@@ -27,6 +27,9 @@ int write_mem(addr_t address, struct pcb_t * proc, BYTE data);
 
 void dump(void);
 
+// Generate table entry for segment table and page tables
+void map_addr(addr_t physical_addr, addr_t virtual_addr, struct pcb_t* proc);
+
 #endif
 
 
